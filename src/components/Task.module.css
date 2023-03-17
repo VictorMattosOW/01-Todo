@@ -1,0 +1,55 @@
+.content {
+  width: 100%;
+  min-height: 72px;
+  background: var(--gray-500);
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.form {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  font-size: 14px;
+  color: var(--gray-100);
+
+}
+
+.task {
+  width: 100%;
+}
+
+.task_checked {
+  width: 100%;
+  text-decoration: line-through;
+  opacity: 40%;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-top: 1px;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid var(--blue);
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: var(--gray-500);
+  background-image: none;
+}
+
+input[type="checkbox"]:checked {
+  background-image: url('../src/assets/Vector.svg'); /* adiciona imagem de fundo */
+  background-repeat: no-repeat; /* evita que a imagem de fundo seja repetida */
+  background-position: center;
+  background-color: var(--purple);
+  border-color: var(--purple);
+}
